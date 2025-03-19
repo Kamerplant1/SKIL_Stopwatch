@@ -1,0 +1,112 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    color:white;
+    background:black;
+}
+
+body{
+    font-size: 2rem;
+    display:flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 40rem;
+    height: 40rem;
+    background: #fc7013;
+    border-radius: 5rem;
+    flex-shrink: 0;
+}
+
+.card--data{
+display: flex;
+flex-direction: column;
+padding:2rem;
+gap:2rem;
+}
+
+.card--data img{
+height:70%;
+border-radius: 5rem;
+}
+
+.card--data p{
+height:20%;
+font-size: 75%;
+}
+.card--slider{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:4rem;
+}
+
+.card--slider > input{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    background: #603813; 
+    border-radius: 5rem;
+    height:1.8rem;
+background: -webkit-linear-gradient(to right, #b29f94, #603813);
+background: linear-gradient(to right, #b29f94, #603813);
+}
+
+.card--slider > input::-webkit-slider-thumb{
+appearance: none;
+background-color: black;
+border-radius: 5rem;
+width: 3rem;
+height: 3rem;
+cursor: pointer;
+}
+
+.card--stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+}
+
+.timertext{
+    font-size: 200%;
+}
+
+.button{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5rem;
+}
+
+.button--start{
+    background:green;
+}
+.button--stop{
+    background:red;
+}
+.button--reset{
+    background:blue;
+}
+.button--start,.button--stop,.button--reset{
+    transform:scale(100%);
+    transition-duration: 0.5s;
+}
+.button--start:hover,.button--stop:hover,.button--reset:hover{
+    transform: scale(105%);
+    transition-duration: 0.5s;
+}

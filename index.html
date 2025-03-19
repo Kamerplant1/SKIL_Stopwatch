@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch-Dashboard</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="JS/Main.js" defer></script>
+</head>
+
+<body id="js--body">
+    <article class="card card--slider">
+        <h2 id="js--rangeValue">0</h2>
+        <input id="js--slider" type="range" min="1" max="4" step="1">
+
+    </article>
+    <article class="card card--data">
+        <img id="js--image" src="" alt="">
+        <p id="js--text"></p>
+    </article>
+    <article class="card card--stopwatch">
+
+        <div>
+            <span class="timertext" id="js--minutesTimer">00</span>
+            <span class="timertext">:</span>
+            <span class="timertext" id="js--secondsTimer">00</span>
+            <span>.</span>
+            <span class="timertext" id="js--msTimer">00</span>
+        </div>
+
+        <section class="buttonwrapper">
+            <button class="button button--start" id="js--start">Start</button>
+            <button class="button button--stop" id="js--stop">Stop</button>
+            <button class="button button--reset" id="js--reset">Reset</button>
+        </section>
+    </article>
+</body>
+
+</html>
